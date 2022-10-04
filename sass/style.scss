@@ -1,0 +1,158 @@
+// Typography
+$poppins: "Poppins", sans-serif;
+
+// Light Colors
+$light-00: #f2f2f2;
+$light-01: #f5f2ea;
+$light-02: #fdc886;
+
+// Dark Colors
+$dark-00: #010000;
+$dark-01: #545454;
+
+// Input Variables
+
+$input-radius: 6px;
+$input-border-color: $light-00;
+$input-focus-box-shadow-color: $light-02;
+
+.card {
+  max-width: 600px !important;
+  background-color: #fff !important;
+  margin: 0 auto !important;
+  padding: 56px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  border-radius: 26px !important;
+}
+
+h1.title {
+  text-transform: capitalize !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  margin-bottom: 26px !important;
+}
+
+p.subtitle {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 28px !important;
+  margin-bottom: 40px !important;
+}
+
+form {
+  margin-bottom: 40px !important;
+  input {
+    font-family: $poppins !important;
+    font-size: 16px !important;
+    border: 2px solid $input-border-color !important;
+    border-radius: $input-radius !important;
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+    padding: 14px 18px !important;
+    outline: none !important;
+
+    &::placeholder {
+      font-weight: 500 !important;
+      text-transform: capitalize !important;
+      opacity: 0.85 !important;
+      color: $dark-00 !important;
+      font-family: $poppins !important;
+    }
+  }
+  a {
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 38px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: $dark-00;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+  #button {
+    width: 100%;
+  }
+}
+
+#tag {
+  position: relative;
+  width: max-content;
+  display: block;
+  margin: auto;
+  margin-bottom: 34px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: $dark-00;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: $dark-00;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+}
+
+html {
+  background-color: $light-01 !important;
+}
+
+body {
+  font-family: $poppins !important;
+  color: $dark-00;
+}
+
+nav {
+  background-color: $light-01 !important;
+}
+
+h1.text-logo {
+  font-family: $poppins;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h1.text-logo a {
+  display: block;
+  text-transform: capitalize;
+  color: $dark-01;
+}
+
+#button {
+  display: block !important;
+  color: $dark-00 !important;
+  background-color: $light-02 !important;
+  padding: 14px 26px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  border-radius: 9px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+// Bulma
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";

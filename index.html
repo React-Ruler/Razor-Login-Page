@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razor</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="section">
+      <div class="container">
+        <nav
+          class="navbar is-transparent"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="navbar-brand">
+            <h1 class="text-logo"><a href="#"> razor </a></h1>
+
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="navbar-menu">
+            <div class="navbar-start">
+              <!-- navbar items -->
+            </div>
+
+            <div class="navbar-end">
+              <a class="navbar-item">
+                <i class="fa-solid fa-globe"></i> &nbsp;&nbsp;</a
+              >
+              <a class="navbar-item"> sign up </a>
+
+              <div class="navbar-item">
+                <a href="#" id="button"> request demo </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+            <h1 class="title">agent login</h1>
+            <p class="subtitle">
+              hey, enter your details to get sign in <br />
+              to your account
+            </p>
+            <form action="">
+              <div class="field">
+                <div class="control">
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Enter Email / Phone No"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="password" placeholder="Passcode" />
+                </div>
+              </div>
+              <a href="#">having trouble signing in?</a>
+              <div class="control">
+                <button id="button" type="submit">sign in</button>
+              </div>
+            </form>
+            <span id="tag">Or Sign in with</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
