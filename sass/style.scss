@@ -46,6 +46,7 @@ p.subtitle {
 
 form {
   margin-bottom: 40px !important;
+
   input {
     font-family: $poppins !important;
     font-size: 16px !important;
@@ -65,6 +66,7 @@ form {
       font-family: $poppins !important;
     }
   }
+
   a {
     display: block;
     margin-top: 28px;
@@ -79,6 +81,7 @@ form {
       text-transform: capitalize;
     }
   }
+
   #button {
     width: 100%;
   }
@@ -105,9 +108,11 @@ form {
     top: 50%;
     transform: translate(0, -50%);
   }
+
   &::before {
     left: 0;
   }
+
   &::after {
     right: 0;
   }
@@ -167,6 +172,7 @@ h1.text-logo a {
   text-align: center !important;
   display: grid !important;
 }
+
 .card-footer {
   display: grid !important;
 
@@ -185,12 +191,39 @@ h1.text-logo a {
       text-transform: capitalize;
     }
   }
+
   a {
     font-family: $poppins;
     font-weight: 600;
     color: $dark-00;
     text-transform: capitalize;
     text-decoration: none;
+  }
+}
+
+.footer {
+  background-color: $light-01 !important;
+  padding-top: 5px !important;
+  padding-left: 0 !important;
+  padding-bottom: 40px !important;
+  padding-right: 0px !important;
+
+  p.copyrights {
+    font-family: $poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: $dark-00;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $dark-00;
+    text-transform: capitalize;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid $dark-00;
+    line-height: 16px;
   }
 }
 
